@@ -1,13 +1,6 @@
-# import time
-
-# # Start the timer
-# start_time = time.perf_counter_ns()
-############################################
-############################################
-############################################
 import re
 
-input = open("input.txt", "r").read()
+input = open("input.txt", "r").read().splitlines()
 
 numbers = {
     "one": 1,
@@ -36,17 +29,9 @@ pattern_2 = re.compile(
 )
 sum_1, sum_2 = 0, 0
 
-for line in input.split("\n"):
+for line in input:
     g_1, g_2 = pattern_1.findall(line), pattern_2.findall(line)
     sum_1 += numbers[g_1[0]] * 10 + numbers[g_1[-1]]
     sum_2 += numbers[g_2[0]] * 10 + numbers[g_2[-1]]
 
 # print(f"Part 1: {sum_1}\nPart 2: {sum_2}")
-############################################
-############################################
-############################################
-
-# end_time = time.perf_counter_ns()
-# execution_time = end_time - start_time
-
-# print(f"Python program executed in {execution_time*1e-6:.3f} ms")

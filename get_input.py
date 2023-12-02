@@ -21,7 +21,7 @@ SESSION = tomllib.load(open("session_id.toml", "rb"))["session"]
 
 parser = argparse.ArgumentParser(description="Read input")
 parser.add_argument("--y", type=int, default=2023)
-parser.add_argument("--d", type=int, default=1)
+parser.add_argument("--d", type=int, default=2)
 args = parser.parse_args()
 
 cmd = f'curl https://adventofcode.com/{args.y}/day/{args.d}/input --cookie "session={SESSION}"'
