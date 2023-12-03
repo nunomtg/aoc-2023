@@ -1,3 +1,8 @@
+import time
+
+start_time = time.perf_counter_ns()
+
+######################################
 import re
 
 input = open("input.txt", "r").read().splitlines()
@@ -35,3 +40,9 @@ for line in input:
     sum_2 += numbers[g_2[0]] * 10 + numbers[g_2[-1]]
 
 # print(f"Part 1: {sum_1}\nPart 2: {sum_2}")
+######################################
+
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+
+print(f"Python program executed in {execution_time*1e-6:.3f} ms")

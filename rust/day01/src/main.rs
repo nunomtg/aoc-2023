@@ -1,7 +1,10 @@
+use std::time::Instant;
 use std::fs;
 use std::collections::HashMap;
 
 fn main() {
+    let start_time = Instant::now();
+    //////////////////////////////////////////////////////////////////////////////////
     #[allow(non_snake_case)]
     let NUMS: HashMap<&str, u32> = HashMap::from([
         ("one", 1),
@@ -53,4 +56,9 @@ fn main() {
 
     // println!("Part 1: {}", sum1);
     // println!("Part 2: {}", sum2);
+    //////////////////////////////////////////////////////////////////////////////////
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time).as_micros() as f64 / 1000.0;
+
+    println!("Rust program executed in {:?} ms", duration);
 }

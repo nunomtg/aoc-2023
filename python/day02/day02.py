@@ -1,3 +1,8 @@
+import time
+
+start_time = time.perf_counter_ns()
+
+######################################
 import sys
 
 sys.path.insert(0, "../..")
@@ -31,3 +36,9 @@ for line in input:
 
 
 # print(f"Part 1: {score_1}\nPart 2: {score_2}")
+######################################
+
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+
+print(f"Python program executed in {execution_time*1e-6:.3f} ms")

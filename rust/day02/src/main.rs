@@ -1,9 +1,12 @@
+use std::time::Instant;
 use std::fs;
 use regex::Regex;
 use std::collections::HashMap;
 use std::cmp;
 
 fn main() {
+    let start_time = Instant::now();
+    //////////////////////////////////////////////////////////////////////////////////
     let lines = fs::read_to_string("src/input.txt")
         .expect("Something went wrong reading the file");
 
@@ -48,4 +51,9 @@ fn main() {
     }
     // println!("Part 1: {}", score_1);
     // println!("Part 2: {}", score_2);
+    //////////////////////////////////////////////////////////////////////////////////
+    let end_time = Instant::now();
+    let duration = end_time.duration_since(start_time).as_micros() as f64 / 1000.0;
+
+    println!("Rust program executed in {:?} ms", duration);
 }

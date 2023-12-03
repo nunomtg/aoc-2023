@@ -21,3 +21,6 @@ session_id.toml
 
 # Any python cache
 __pycache__/
+
+# cpp folder (i'll do it later)
+cpp/
