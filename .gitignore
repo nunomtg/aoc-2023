@@ -24,3 +24,6 @@ __pycache__/
 
 # cpp folder (i'll do it later)
 cpp/
+
+# Also input files
+*.txt
