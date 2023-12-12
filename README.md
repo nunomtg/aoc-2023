@@ -13,6 +13,7 @@
 | [🎄 Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | ⭐⭐ | 5.9 ± 0.5  |      |  |
 | [🎄 Day 10: Pipe Maze](https://adventofcode.com/2023/day/10) | ⭐⭐ | 5449.9 ± 129.6  |      |  |
 | [🎄 Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11) | ⭐⭐ | 112.4 ± 2.4  |      |  |
+| [🎄 Day 12: Hot Springs](https://adventofcode.com/2023/day/12) | ⭐⭐ | 1262.1 ± 58.1  |      |  |
 
 
 The times are averaged over 200 iterations. Even though the solutions might not be the most efficient, I try to make the code as comparable as possible between the two languages. 

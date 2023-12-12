@@ -21,7 +21,6 @@ class Galaxy:
 
 
 galaxies = []
-empty = []
 row_count = [0 for _ in range(R)]
 col_count = [0 for _ in range(C)]
 for r in range(R):

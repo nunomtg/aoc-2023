@@ -71,7 +71,7 @@ impl Ord for CHand {
         if self.rank == other.rank {
             for i in 0..6 {
                 if self.card[i] != other.card[i] {
-                    return self.card[i].cmp(&other.card[i]);
+                    return CARD_SCORE_1.get(self.card[i]).unwrap().cmp(&other.card[i]);
                 }
             }
         }
